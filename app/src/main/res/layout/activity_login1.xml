@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
     android:background="@color/colorPrimary"
     tools:context=".activities.LoginActivity1">
 
@@ -35,7 +36,7 @@
         android:textColor="@color/white"
         android:textSize="30sp"
         android:hint="@string/prompt_email"
-        android:maxLength="1"
+        android:maxLength="64"
         android:textColorHint="@color/white"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +54,7 @@
         android:textColor="@color/white"
         android:textSize="30sp"
         android:hint="@string/prompt_password"
-        android:maxLength="1"
+        android:maxLength="64"
         android:textColorHint="@color/white"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,6 +84,7 @@
         android:background="@color/colorPrimaryDark"
         android:text="@string/action_sign_in"
         android:textColor="@color/white"
+        android:onClick="onLoginClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Remember" />
@@ -97,6 +99,7 @@
         android:gravity="center_horizontal"
         android:textColor="@color/white"
         android:text="@string/forgot_password"
+        android:onClick="onForgotPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Login" />
